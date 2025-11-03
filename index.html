@@ -9,8 +9,8 @@
       margin: 0;
       padding: 0;
       font-family: Arial, sans-serif;
-      background: #0e2015;
-      color: #e9ffe9;
+      background: #e8f5e9; /* Fondo más claro */
+      color: #1b3a22; /* Texto oscuro verde */
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -18,51 +18,57 @@
     }
 
     .card {
-      background: #143d21;
+      background: #ffffff; /* Carta clara */
       width: 100%;
       max-width: 420px;
       padding: 25px;
       border-radius: 20px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.25);
+      box-shadow: 0 0 12px rgba(0,0,0,0.15);
       text-align: center;
       animation: fadeIn 0.8s ease;
+      border: 2px solid #c8e6c9;
     }
 
     h1 {
       margin-top: 0;
-      font-size: 1.8rem;
+      font-size: 1.9rem;
       font-weight: bold;
+      color: #2e7d32;
     }
 
     p {
       line-height: 1.4;
       font-size: 1rem;
       margin-bottom: 20px;
+      color: #2c4a34;
     }
 
     .btn-descargar {
       display: inline-block;
       padding: 15px 20px;
-      background: #2ecc71;
+      background: #66bb6a; /* Verde más claro */
       color: #fff;
       text-decoration: none;
       border-radius: 12px;
       font-size: 1.1rem;
       font-weight: bold;
-      transition: transform 0.2s ease;
+      transition: transform 0.2s ease, background 0.2s ease;
     }
 
     .btn-descargar:hover {
       transform: scale(1.05);
+      background: #57a65a;
     }
 
     .tutorial {
       margin-top: 25px;
       text-align: left;
-      background: #102d1a;
+      background: #f1f8f5;
       padding: 15px;
       border-radius: 12px;
       font-size: 0.95rem;
+      color: #1c3d29;
+      border: 1px solid #c8e6c9;
       animation: slideUp 0.8s ease;
     }
 
@@ -84,7 +90,7 @@
       Descarga la app oficial para analizar el pH del suelo y obtener recomendaciones de cal o azufre según tu terreno.
     </p>
 
-    <a class="btn-descargar" href="download/analizador_de_tierra.apk" download>
+    <a class="btn-descargar" href="download/analizador_tierra.apk" download>
       Descargar APK
     </a>
 
@@ -101,7 +107,6 @@
   </div>
 
   <script>
-    // Animación leve cuando aparece el botón
     const btn = document.querySelector('.btn-descargar');
     btn.style.opacity = 0;
     setTimeout(() => {
@@ -111,5 +116,3 @@
   </script>
 </body>
 </html>
-
-
